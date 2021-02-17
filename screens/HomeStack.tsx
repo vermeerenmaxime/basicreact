@@ -33,7 +33,7 @@ const Stack = createStackNavigator();
 const HomeStack = ({navigation}: any) => {
 
     const headerScreenOptions = {
-        headerStyle: stackHeaderStyle.app, display:'flex'
+        headerStyle: stackHeaderStyle.app, display:'flex',
         header: ({scene}: any) => {
             // console.log({options})
 
@@ -43,7 +43,7 @@ const HomeStack = ({navigation}: any) => {
 
             return (
                 <View style={{
-                    ...stackHeaderStyle.app
+                    ...stackHeaderStyle.app, alignItems:'center',justifyContent:'space-between',flexDirection:'row',paddingTop:36
                 }}>
                     {/* Niks links, later backbutton */}
                     {/* <Text style={{marginTop:'auto',textAlign:'center',paddingBottom:8,fontWeight:'bold',fontSize:20}}>{title}</Text> */}
